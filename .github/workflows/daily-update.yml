@@ -17,7 +17,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # v5+ 使用 Node.js 24 运行时，避免 Node 20 弃用告警
+      - uses: actions/checkout@v5
 
       - name: Regenerate out/
         run: |
