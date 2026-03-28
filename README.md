@@ -142,7 +142,7 @@ git push -u origin main
 
 仓库含 [`.github/workflows/daily-update.yml`](.github/workflows/daily-update.yml)：
 
-- **定时**：每天北京时间约 **00:00**（`cron: 0 16 * * *` UTC）拉取上游并执行 `convert-dnsmasq-china.sh`，若有差异则提交并推送 **`out/`**。
+- **定时**：每天 **`Asia/Shanghai` 0:00**（`cron: 0 0 * * *` + `timezone: Asia/Shanghai`）拉取上游并执行 `convert-dnsmasq-china.sh`，若有差异则提交并推送 **`out/`**。
 - **手动**：在 GitHub 仓库 **Actions** 页选择 **Daily refresh out/** → **Run workflow**。
 
 首次使用请在仓库 **Settings → Actions → General → Workflow permissions** 中勾选 **Read and write permissions**（否则无法 `git push`）。

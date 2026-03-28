@@ -2,8 +2,9 @@ name: Daily refresh out/
 
 on:
   schedule:
-    # 00:00 北京时间 ≈ 16:00 UTC（前一日）
-    - cron: "0 16 * * *"
+    # 每天 00:00（中国时区 Asia/Shanghai，无夏令时）
+    - cron: "0 0 * * *"
+      timezone: "Asia/Shanghai"
   workflow_dispatch:
 
 permissions:
