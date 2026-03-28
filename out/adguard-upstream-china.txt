@@ -1,6 +1,5 @@
 # AdGuard Home: paste as upstreams or use as upstream_dns_file
 # Syntax: [/d1/d2/.../]upstream - up to 8 domains per line (same upstream)
-# Override upstream: 114.114.114.114
 
 [/0.xn--czrs0t/0.xn--unup4y/0.zone/00.net/000.link/000000.net/000000.xin/0000001.xin/]114.114.114.114
 [/000001.xin/00000qpqp00000.com/0000550xtz2.shop/0000552bb0.shop/0000552bb1.shop/0000552bb2.shop/0000552bb3.shop/0000552bb4.shop/]114.114.114.114
